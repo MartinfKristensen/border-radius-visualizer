@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border Radius Viewer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="rectangle" class="rectangle"></div>
+    <form action="">
+      <label for="top-left">Top Left Corner</label>
+      <input
+        type="range"
+        name="top-left"
+        id="top-left"
+        value="0"
+        min="0"
+        max="100"
+        oninput="topLeftBorderChange()"
+      />
+      <p id="topLeftP">0px</p>
+
+      <label for="top-right">Top Right Corner</label>
+      <input
+        type="range"
+        name="top-right"
+        id="top-right"
+        value="0"
+        min="0"
+        max="100"
+        oninput="topRightBorderChange()"
+      />
+      <p id="topRightP">0px</p>
+
+      <label for="bottom-left">Bottom Left Corner</label>
+      <input
+        type="range"
+        name="bottom-left"
+        id="bottom-left"
+        value="0"
+        min="0"
+        max="100"
+        oninput="bottomLeftBorderChange()"
+      />
+      <p id="bottomLeftP">0px</p>
+
+      <label for="bottom-right">Bottom Right Corner</label>
+      <input
+        type="range"
+        name="bottom-right"
+        id="bottom-right"
+        value="0"
+        min="0"
+        max="100"
+        oninput="bottomRightBorderChange()"
+      />
+      <p id="bottomRightP">0px</p>
+
+      <label for="all">All Corners</label>
+      <input
+        type="range"
+        name="all"
+        id="all"
+        value="0"
+        min="0"
+        max="100"
+        oninput="allBorderChange()"
+      />
+      <p id="allP">0px</p>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
